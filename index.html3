@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parts of a Website — Mark Brinker</title>
+  <meta name="description" content="A plain-English cheat sheet by Mark Brinker that explains the anatomy and terminology of a website for non-techies." />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; background: #f7f9fc; color: #222; }
+    header, footer { background: #222; color: #fff; padding: 20px; }
+    header h1 { margin: 0; font-size: 24px; }
+    nav { background: #444; color: #fff; padding: 10px; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 900px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { color: #222; margin-top: 24px; }
+    h3 { color: #444; margin-top: 16px; }
+    ul { margin: 10px 0 20px 20px; }
+    .cta { display: inline-block; background: #e63946; color: #fff; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    .cta:hover { background: #a4161a; }
+    footer p { margin: 5px 0; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mark Brinker</h1>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#why-no-one">Why No One's Calling</a>
+    <a href="#work-with-us">Work With Us</a>
+  </nav>  <div class="container">
+    <h2>Parts Of A Website: A Cheat Sheet For Non-Techies</h2>
+    <p><em>By Mark Brinker  /  Updated: May 20, 2025</em></p><p>Lead flow off lately? You’re not imagining it. In 2025, even smart business owners are struggling to get leads. This free 7-minute video explains what’s changed — and what to do about it.</p>
+<a class="cta" href="#video">👉 Watch the video</a>
+
+<h2>Confused by website terminology?</h2>
+<p>If so, here’s a handy glossary (all in plain English) that’ll quickly get you up to speed and demystify the language of web technology.</p>
+
+<p>Once you understand basic website jargon, you’ll never get intimidated or befuddled the next time a web designer or web developer spews techno-babble.</p>
+
+<h2>Basic Anatomy Of A Website</h2>
+<p>Let’s start by defining the various parts of a website:</p>
+
+<h3>Header</h3>
+<p>The header is the top section of a website, where you’ll usually find the logo and the site’s navigation menu.</p>
+
+<h3>Pre-Header</h3>
+<p>The pre-header is the thin strip that sits above the main header, often used for quick-access details.</p>
+
+<h3>Favicon</h3>
+<p>A favicon is the small icon that appears in a browser tab next to your website title.</p>
+
+<h3>Navigation</h3>
+<p>The navigation is the set of links at the top of a website that helps visitors find what they’re looking for.</p>
+
+<h3>Breadcrumbs</h3>
+<p>Breadcrumbs show visitors their location within a website’s hierarchy, e.g. <em>Home > Blog > Post</em>.</p>
+
+<h3>Website Content</h3>
+<p>Content includes text, images, videos, audio, and all elements designed to inform, engage, or persuade your audience.</p>
+
+<h3>Homepage</h3>
+<p>The homepage is the front page of a site — the central hub to guide visitors.</p>
+
+<h3>Homepage Hero Area</h3>
+<p>The top section of a homepage with a headline, sub-headline, CTA, and visual element to grab attention.</p>
+
+<h3>Slider</h3>
+<p>A rotating series of images, often on the homepage. Once popular, now less common due to performance issues.</p>
+
+<h3>Alt Text</h3>
+<p>Alt text describes images for accessibility and SEO.</p>
+
+<h3>Sidebar</h3>
+<p>A sidebar is a vertical column beside main content, often with ads, links, or a search box.</p>
+
+<h3>Sub-Footer</h3>
+<p>A section above the footer with secondary navigation, contact info, or social icons.</p>
+
+<h3>Footer</h3>
+<p>The footer is the final section of a webpage, with legal, policy, and contact details.</p>
+
+<h3>Landing Page</h3>
+<p>A landing page is built for a single focused action, often without distractions like headers or footers.</p>
+
+<h3>Call To Action (CTA)</h3>
+<p>A CTA is a request for visitors to take action, e.g., click a button or sign up.</p>
+
+<h3>Above the Fold</h3>
+<p>The part of a webpage visible without scrolling. Important CTAs are often placed here.</p>
+
+<h3>Blog</h3>
+<p>A blog displays posts in chronological order, usually conversational in tone.</p>
+
+<h3>Card Design</h3>
+<p>Card design organizes content into distinct tiles in a grid layout, popular for galleries or blog pages.</p>
+
+<h2>Additional Terminology Of Modern Websites</h2>
+
+<h3>WordPress</h3>
+<p>WordPress is a CMS (content management system) that powers millions of websites using themes and plugins.</p>
+
+<h3>Hosting</h3>
+<p>Hosting is the server space where your website lives, provided by companies like HostGator or BlueHost.</p>
+
+<h3>Caching</h3>
+<p>Caching stores a temporary version of a website to make it load faster.</p>
+
+<h3>Domain Name (URL)</h3>
+<p>A domain name is your website’s address, e.g., <em>markbrinker.com</em>.</p>
+
+<h3>Domain Registrar</h3>
+<p>A domain registrar is where you purchase and register your domain name, e.g., NameCheap or GoDaddy.</p>
+
+<h3>301 Redirect</h3>
+<p>A 301 redirect permanently forwards visitors from one URL to another, preserving SEO value.</p>
+
+<h3>404 Error Page</h3>
+<p>A page shown when the requested page doesn’t exist. Can include helpful links or search options.</p>
+
+<h3>DNS</h3>
+<p>DNS (Domain Name System) translates domain names into IP addresses, like a phonebook for the web.</p>
+
+<h3>HTML</h3>
+<p>HTML (Hyper Text Markup Language) structures web content using tags for headings, paragraphs, images, and links.</p>
+
+<h3>CSS</h3>
+<p>CSS (Cascading Style Sheets) styles the design of a webpage: fonts, colors, layout, and responsiveness.</p>
+
+<h3>Website Builder</h3>
+<p>Website builders like Wix and Squarespace let you design websites with drag-and-drop tools, no coding required.</p>
+
+  </div>  <footer>
+    <p><strong>Mark Brinker</strong></p>
+    <p>&copy; 2025 Mark Brinker | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
