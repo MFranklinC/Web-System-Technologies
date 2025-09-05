@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halo Lab – 19 Vital Parts for Your Website Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #fdfdfd; color: #333; }
+    header, nav, footer { background: #111; color: #fff; padding: 1em; }
+    header h1 { margin: 0; font-size: 1.5em; }
+    nav ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; }
+    nav ul li { margin-right: 15px; }
+    nav ul li a { color: #fff; text-decoration: none; }
+    main { padding: 2em; }
+    h2 { color: #222; margin-top: 1.5em; }
+    section { margin-bottom: 2em; }
+    .highlight { background: #fffae6; padding: 10px; border-left: 4px solid #f39c12; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Halo Lab</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Dedicated team</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>19 vital parts for your website page to maximize user engagement</h2>
+    <p><em>Published: 10 Jan — by Valentine Boyev, CEO at Halo Lab</em></p><p class="highlight">Web design and page structure play a big role in encouraging users to click and scroll. Here’s a blueprint of 19 essential elements to make your web pages visitor-friendly and engaging.</p>
+
+<h2>1. Header</h2>
+<p>The header is the first impression — it usually contains navigation, logo, and quick links.</p>
+
+<h2>2. CTA Button</h2>
+<p>Clear, inviting buttons that guide users on what to do next, like “Sign Up” or “Learn More.”</p>
+
+<h2>3. Hero Section</h2>
+<p>Visually striking images or videos paired with bold text that immediately capture attention.</p>
+
+<h2>4. Footer</h2>
+<p>Houses contact info, links, and sometimes newsletter sign-ups — the final impression of your site.</p>
+
+<h2>5. Slider</h2>
+<p>Interactive carousels to showcase multiple messages, offers, or images compactly.</p>
+
+<h2>6. Search</h2>
+<p>A quick access tool for users to find information instantly.</p>
+
+<h2>7. Menu and Navigation</h2>
+<p>Guides visitors through your site — can be horizontal, dropdown, sidebar, or hamburger menu.</p>
+
+<h2>8. Breadcrumbs</h2>
+<p>Secondary navigation showing users their current location and journey within your site.</p>
+
+<h2>9. Forms</h2>
+<p>Collects user info for sign-ups, purchases, or feedback with simple and clear fields.</p>
+
+<h2>10. Cards</h2>
+<p>Compact containers for organizing products, posts, or features.</p>
+
+<h2>11. Videos</h2>
+<p>Engaging media to demonstrate services, products, or testimonials.</p>
+
+<h2>12. Progress Indicator</h2>
+<p>Visual bars or steps that show users where they are in a process.</p>
+
+<h2>13. Favicon</h2>
+<p>A small browser tab icon that improves brand recognition.</p>
+
+<h2>14. Tags</h2>
+<p>Helps categorize and organize content for easier navigation and SEO benefits.</p>
+
+<h2>15. Links</h2>
+<p>Directs users internally or externally — they should be clear and purposeful.</p>
+
+<h2>16. Quality Images</h2>
+<p>Authentic, optimized visuals that align with your brand and improve engagement.</p>
+
+<h2>17. Typography</h2>
+<p>Readable, consistent fonts that reflect your brand’s personality.</p>
+
+<h2>18. White Space</h2>
+<p>Strategic spacing that gives clarity and balances the page layout.</p>
+
+<h2>19. Sidebar</h2>
+<p>A vertical section for additional navigation, links, or call-to-actions.</p>
+
+<h2>Final Point</h2>
+<p>Together, these 19 elements create a well-structured, user-friendly, and engaging website page.</p>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Halo Lab | <a href="#" style="color:#fff;">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
