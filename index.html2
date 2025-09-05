@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anatomy of a Webpage — Quick Guide</title>
+  <meta name="description" content="A concise, student-friendly summary of the core elements of a webpage: page title, ID (URL slug), description, body, headings, lists, emphasis, links, and calls to action." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #11162a;
+      --muted: #7f8ba7;
+      --text: #e9edf7;
+      --accent: #7aa2ff;
+      --accent-2: #a8ffcc;
+      --border: #1b2240;
+      --ok: #a8ffcc;
+      --warn: #ffd27a;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.55;
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 10% -10%, #14204b 0%, var(--bg) 60%);
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
+    header {
+      display: grid; gap: 10px; align-items: start; margin-bottom: 24px;
+    }
+    .title { font-size: clamp(28px, 4vw, 44px); font-weight: 800; letter-spacing: 0.3px; }
+    .subtitle { color: var(--muted); font-size: 15px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.05);
+      border-radius: 18px; padding: 20px; backdrop-filter: blur(6px);
+    }
+    nav.toc { position: sticky; top: 16px; }
+    .grid { display: grid; grid-template-columns: 280px 1fr; gap: 20px; }
+    @media (max-width: 900px){ .grid { grid-template-columns: 1fr; } nav.toc { position: static; } }
+    .block + .block { margin-top: 16px; }
+    h2, h3 { margin: 0 0 10px; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; color: var(--accent); }
+    p { margin: 0 0 10px; }
+    ul { margin: 8px 0 0 20px; }
+    li { margin: 6px 0; }
+    .badge { display: inline-block; font-size: 12px; padding: 4px 8px; border-radius: 999px; background: #10183a; border: 1px solid var(--border); color: var(--muted); }
+    .hint { font-size: 13px; color: var(--muted); }
+    .cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(90deg, var(--accent), #8bd0ff);
+      color: #0b1020; font-weight: 700; text-decoration: none; padding: 10px 14px; border-radius: 12px; border: none;
+      box-shadow: 0 6px 20px rgba(122,162,255,0.35);
+    }
+    .ok { color: var(--ok); }
+    .warn { color: var(--warn); }
+    .pill { border: 1px dashed var(--border); border-radius: 10px; padding: 6px 10px; color: var(--muted); font-size: 12px; }
+    .footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
+    code.kbd { background: #0f1736; border: 1px solid var(--border); padding: 1px 6px; border-radius: 6px; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; color: var(--accent-2); }
+    .toc a { color: var(--text); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">Web Content Basics</span>
+      <div class="title">Anatomy of a Webpage — Quick Guide</div>
+      <div class="subtitle">A compact, student‑friendly reference for crafting clear, effective pages.</div>
+    </header><div class="grid">
+  <nav class="toc card">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#title">Page Title</a></li>
+      <li><a href="#id">ID (URL Slug)</a></li>
+      <li><a href="#description">Description (Meta)</a></li>
+      <li><a href="#body">Body Content</a></li>
+      <li><a href="#headings">Headings</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#emphasis">Bold, Italics, Underline</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#cta">Call to Action</a></li>
+    </ol>
+    <p class="hint">Tip: Keep your users’ task in mind. Lead with what matters most.</p>
+  </nav>
+
+  <main class="content">
+    <section id="title" class="card block">
+      <h2>1. Page Title</h2>
+      <p>The title tells visitors exactly what they’ll find on the page.</p>
+      <ul>
+        <li>Keep it short and use clear language.</li>
+        <li>Make the first two words count.</li>
+        <li>Avoid internal jargon or acronyms.</li>
+      </ul>
+    </section>
+
+    <section id="id" class="card block">
+      <h2>2. ID (URL Slug)</h2>
+      <p>The ID is the label at the end of your page URL (often called the “slug”).</p>
+      <ul>
+        <li>Use <strong>hyphens</strong> between words; <span class="warn">never underscores</span>.</li>
+        <li>Use <strong>lowercase</strong> only; no special characters.</li>
+        <li>Choose words that make sense and reflect the page title.</li>
+        <li>Avoid obscure acronyms or abbreviations.</li>
+      </ul>
+      <p class="hint">Example: <code class="kbd">/web-content/anatomy-of-a-webpage</code></p>
+    </section>
+
+    <section id="description" class="card block">
+      <h2>3. Description (Meta)</h2>
+      <p>Write a one‑sentence summary using keywords and phrases your audience might search.</p>
+      <p>Where it appears:</p>
+      <ul>
+        <li>Search results (e.g., Google snippets)</li>
+        <li>Link previews on social or forums</li>
+      </ul>
+    </section>
+
+    <section id="body" class="card block">
+      <h2>4. Body Content</h2>
+      <p>The main information that helps visitors complete their task.</p>
+      <ul>
+        <li>Start with the most important information.</li>
+        <li>Use short words, sentences, and paragraphs.</li>
+        <li>Write for the user’s needs in language they understand.</li>
+        <li>Never use ALL CAPS for emphasis—prefer <strong>bold</strong> if needed.</li>
+      </ul>
+    </section>
+
+    <section id="headings" class="card block">
+      <h2>5. Headings</h2>
+      <p>Headings help users scan quickly to confirm they’re in the right place.</p>
+      <ul>
+        <li>Describe the section clearly and concretely.</li>
+        <li>Use relevant, powerful, and active words.</li>
+        <li>Use <code class="kbd">H2</code> for main section headings and <code class="kbd">H3</code> for sub‑headings.</li>
+        <li class="warn">If you think you need <code class="kbd">H4</code>, re‑evaluate—your page may be getting messy.</li>
+      </ul>
+    </section>
+
+    <section id="lists" class="card block">
+      <h2>6. Lists</h2>
+      <p>Use lists to break up long text or show sequential steps.</p>
+      <ul>
+        <li>Capitalize the first word of each item.</li>
+        <li>Add periods to complete sentences.</li>
+        <li>Keep items parallel (all fragments, all sentences, or all questions).</li>
+        <li>Use numbers for processes or ordered steps.</li>
+        <li>Make the first two words meaningful—they’re what readers will scan.</li>
+      </ul>
+    </section>
+
+    <section id="emphasis" class="card block">
+      <h2>7. Bold, Italics, and Underline</h2>
+      <h3>Bold</h3>
+      <p>Highlight key information like deadlines or fees. Use sparingly—overuse reduces impact.</p>
+      <h3>Italics</h3>
+      <p>Use for titles (books, movies, publications) and repeated minor information that needs visual consistency.</p>
+      <h3>Underline</h3>
+      <p class="warn">Do not underline text on the web—people will think it’s a link. Use bold for emphasis instead.</p>
+    </section>
+
+    <section id="links" class="card block">
+      <h2>8. Links</h2>
+      <p>Link meaningful phrases rather than single words like “here”.</p>
+      <ul>
+        <li>Phrases are easier to spot and improve SEO context.</li>
+        <li>Avoid “here”/“click here”.</li>
+        <li>When linking to files, add a tag like <span class="pill">(pdf)</span>, <span class="pill">(doc)</span>, or <span class="pill">(xls)</span>.</li>
+      </ul>
+    </section>
+
+    <section id="cta" class="card block">
+      <h2>9. Call to Action (CTA)</h2>
+      <p>Give visitors a clear next step related to the task at hand.</p>
+      <a class="cta" href="#" aria-label="Primary call to action">Do the Next Step →</a>
+      <p class="hint">Examples: Apply now, Book a visit, Contact us, Download the guide.</p>
+    </section>
+
+    <section class="footer">
+      <p>This page is a learning aid summarizing best practices for structuring web content.</p>
+    </section>
+  </main>
+</div>
+
+  </div>
+</body>
+</html>
