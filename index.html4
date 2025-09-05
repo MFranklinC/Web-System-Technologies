@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Anatomy of a Web Page: 14 Basic Elements — Tubik Studio</title>
+  <meta name="description" content="Review the essential elements of a web page, learn what impact each element has and how it contributes to user experience. Article by Tubik Studio." />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; background: #f7f9fc; color: #222; }
+    header, footer { background: #111; color: #fff; padding: 20px; }
+    header h1 { margin: 0; font-size: 24px; }
+    nav { background: #222; color: #fff; padding: 10px; display: flex; flex-wrap: wrap; gap: 15px; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 900px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { color: #111; margin-top: 24px; }
+    h3 { color: #333; }
+    ul { margin: 10px 0 20px 20px; }
+    .meta { font-size: 14px; color: #555; margin-bottom: 20px; }
+    .quote { font-style: italic; background: #f0f0f0; padding: 10px; border-left: 4px solid #222; margin: 20px 0; }
+    footer p { margin: 5px 0; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tubik Studio</h1>
+    <p>Design Blog</p>
+  </header>  <nav>
+    <a href="#blog">Blog</a>
+    <a href="#browse">Browse</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#animation">Animation</a>
+    <a href="#branding">Branding</a>
+    <a href="#business">Business</a>
+    <a href="#uiux">UI/UX</a>
+  </nav>  <div class="container">
+    <h2>The Anatomy of a Web Page: 14 Basic Elements</h2>
+    <p class="meta">by Marina Yalanska</p>
+    <p><strong>Review the essential elements of a web page, learn what impact each element has and how it contributes to the general user experience.</strong></p><div class="quote">“The details are not the details. They make the design.” — Charles Eames</div>
+
+<p>Starting to design a web page, we have to consider what it should consist of to solve the task set for it and be both usable and beautiful. Let’s briefly review what elements can be essential for a typical web page, what impact each element has, and how it contributes to user experience.</p>
+
+<h2>1. Header</h2>
+<p>The header is the upper part of the webpage and provides core navigation. It usually includes a logo, navigation links, CTA button, search field, and sometimes language switchers or contact info.</p>
+
+<h2>2. CTA Button</h2>
+<p>Call-to-action buttons encourage users to act — buy, subscribe, or contact. They must be bold, visible, and action-driven.</p>
+
+<h2>3. Hero Section</h2>
+<p>This is the above-the-fold area, often featuring a hero image, video, or typography that grabs attention instantly.</p>
+
+<h2>4. Footer</h2>
+<p>The footer is the bottom area of the webpage. It may include navigation links, contact info, social media, subscriptions, and legal notices.</p>
+
+<h2>5. Slider</h2>
+<p>A slider (carousel) presents multiple images or offers. It saves space but can impact loading speed and usability.</p>
+
+<h2>6. Search</h2>
+<p>Internal search allows users to quickly find content within the website. It’s essential for content-heavy websites.</p>
+
+<h2>7. Menu</h2>
+<p>The menu is a core navigation tool. It can be horizontal, vertical, dropdown, megamenu, or hidden behind a hamburger icon.</p>
+
+<h2>8. Breadcrumbs</h2>
+<p>Breadcrumbs support navigation by showing the user’s current location and path within the site hierarchy.</p>
+
+<h2>9. Form</h2>
+<p>Forms collect user data. They must be simple, clear, and intuitive — common examples include sign-ups, logins, and contact forms.</p>
+
+<h2>10. Cards</h2>
+<p>Cards organize content in a scannable way, often with images, titles, and actions. They’re widely used in blogs and e-commerce.</p>
+
+<h2>11. Video</h2>
+<p>Video elements provide strong visual hooks and storytelling opportunities. They should be optimized for load speed and responsiveness.</p>
+
+  </div>  <footer>
+    <p><strong>Tubik Studio</strong></p>
+    <p>© 2025 Tubik Studio | All rights reserved.</p>
+  </footer>
+</body>
+</html>
