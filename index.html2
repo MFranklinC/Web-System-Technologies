@@ -1,191 +1,280 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anatomy of a Webpage — Quick Guide</title>
-  <meta name="description" content="A concise, student-friendly summary of the core elements of a webpage: page title, ID (URL slug), description, body, headings, lists, emphasis, links, and calls to action." />
-  <style>
-    :root {
-      --bg: #0b1020;
-      --card: #11162a;
-      --muted: #7f8ba7;
-      --text: #e9edf7;
-      --accent: #7aa2ff;
-      --accent-2: #a8ffcc;
-      --border: #1b2240;
-      --ok: #a8ffcc;
-      --warn: #ffd27a;
-    }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      line-height: 1.55;
-      color: var(--text);
-      background: radial-gradient(1200px 800px at 10% -10%, #14204b 0%, var(--bg) 60%);
-    }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
-    header {
-      display: grid; gap: 10px; align-items: start; margin-bottom: 24px;
-    }
-    .title { font-size: clamp(28px, 4vw, 44px); font-weight: 800; letter-spacing: 0.3px; }
-    .subtitle { color: var(--muted); font-size: 15px; }
-    .card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border: 1px solid var(--border);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.05);
-      border-radius: 18px; padding: 20px; backdrop-filter: blur(6px);
-    }
-    nav.toc { position: sticky; top: 16px; }
-    .grid { display: grid; grid-template-columns: 280px 1fr; gap: 20px; }
-    @media (max-width: 900px){ .grid { grid-template-columns: 1fr; } nav.toc { position: static; } }
-    .block + .block { margin-top: 16px; }
-    h2, h3 { margin: 0 0 10px; }
-    h2 { font-size: 22px; }
-    h3 { font-size: 18px; color: var(--accent); }
-    p { margin: 0 0 10px; }
-    ul { margin: 8px 0 0 20px; }
-    li { margin: 6px 0; }
-    .badge { display: inline-block; font-size: 12px; padding: 4px 8px; border-radius: 999px; background: #10183a; border: 1px solid var(--border); color: var(--muted); }
-    .hint { font-size: 13px; color: var(--muted); }
-    .cta {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: linear-gradient(90deg, var(--accent), #8bd0ff);
-      color: #0b1020; font-weight: 700; text-decoration: none; padding: 10px 14px; border-radius: 12px; border: none;
-      box-shadow: 0 6px 20px rgba(122,162,255,0.35);
-    }
-    .ok { color: var(--ok); }
-    .warn { color: var(--warn); }
-    .pill { border: 1px dashed var(--border); border-radius: 10px; padding: 6px 10px; color: var(--muted); font-size: 12px; }
-    .footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
-    code.kbd { background: #0f1736; border: 1px solid var(--border); padding: 1px 6px; border-radius: 6px; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; color: var(--accent-2); }
-    .toc a { color: var(--text); text-decoration: none; }
-    .toc a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-  <div class="wrap">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anatomy of a Webpage - Bethel University</title>
+  </head>
+
+  <body>
     <header>
-      <span class="badge">Web Content Basics</span>
-      <div class="title">Anatomy of a Webpage — Quick Guide</div>
-      <div class="subtitle">A compact, student‑friendly reference for crafting clear, effective pages.</div>
-    </header><div class="grid">
-  <nav class="toc card">
-    <h2>Contents</h2>
-    <ol>
-      <li><a href="#title">Page Title</a></li>
-      <li><a href="#id">ID (URL Slug)</a></li>
-      <li><a href="#description">Description (Meta)</a></li>
-      <li><a href="#body">Body Content</a></li>
-      <li><a href="#headings">Headings</a></li>
-      <li><a href="#lists">Lists</a></li>
-      <li><a href="#emphasis">Bold, Italics, Underline</a></li>
-      <li><a href="#links">Links</a></li>
-      <li><a href="#cta">Call to Action</a></li>
-    </ol>
-    <p class="hint">Tip: Keep your users’ task in mind. Lead with what matters most.</p>
-  </nav>
+      <img src="" alt="logo" />
+      <h3>BETHEL UNIVERSITY</h3>
 
-  <main class="content">
-    <section id="title" class="card block">
-      <h2>1. Page Title</h2>
-      <p>The title tells visitors exactly what they’ll find on the page.</p>
-      <ul>
-        <li>Keep it short and use clear language.</li>
-        <li>Make the first two words count.</li>
-        <li>Avoid internal jargon or acronyms.</li>
-      </ul>
-    </section>
+      <section>
+          <a href="">MyBethel</a>
+          <a href="">Offices</a>
+          <a href="">News</a>
+          <a href="">Events</a>
+          <a href="">Blogs</a>
+      </section>
 
-    <section id="id" class="card block">
-      <h2>2. ID (URL Slug)</h2>
-      <p>The ID is the label at the end of your page URL (often called the “slug”).</p>
-      <ul>
-        <li>Use <strong>hyphens</strong> between words; <span class="warn">never underscores</span>.</li>
-        <li>Use <strong>lowercase</strong> only; no special characters.</li>
-        <li>Choose words that make sense and reflect the page title.</li>
-        <li>Avoid obscure acronyms or abbreviations.</li>
-      </ul>
-      <p class="hint">Example: <code class="kbd">/web-content/anatomy-of-a-webpage</code></p>
-    </section>
+      <section>
+          <a href="">Apply</a>
+          <a href="">Visit</a>
+          <a href="">Give</a>
+          <input type="search" name="" id="" />
+      </section>
 
-    <section id="description" class="card block">
-      <h2>3. Description (Meta)</h2>
-      <p>Write a one‑sentence summary using keywords and phrases your audience might search.</p>
-      <p>Where it appears:</p>
-      <ul>
-        <li>Search results (e.g., Google snippets)</li>
-        <li>Link previews on social or forums</li>
-      </ul>
-    </section>
+      <section>
+          <a href="">About</a>
+          <a href="">Admission & Aid</a>
+          <a href="">Academics</a>
+          <a href="">Student Life</a>
+          <a href="">Athletics</a>
+          <a href="">Faith</a>
+      </section>
+    </header>
 
-    <section id="body" class="card block">
-      <h2>4. Body Content</h2>
-      <p>The main information that helps visitors complete their task.</p>
-      <ul>
-        <li>Start with the most important information.</li>
-        <li>Use short words, sentences, and paragraphs.</li>
-        <li>Write for the user’s needs in language they understand.</li>
-        <li>Never use ALL CAPS for emphasis—prefer <strong>bold</strong> if needed.</li>
-      </ul>
-    </section>
+    <main>
+      <aside>
+        <p><b>Office of Marketing and Communications</b></p>
+      </aside>
 
-    <section id="headings" class="card block">
-      <h2>5. Headings</h2>
-      <p>Headings help users scan quickly to confirm they’re in the right place.</p>
-      <ul>
-        <li>Describe the section clearly and concretely.</li>
-        <li>Use relevant, powerful, and active words.</li>
-        <li>Use <code class="kbd">H2</code> for main section headings and <code class="kbd">H3</code> for sub‑headings.</li>
-        <li class="warn">If you think you need <code class="kbd">H4</code>, re‑evaluate—your page may be getting messy.</li>
-      </ul>
-    </section>
+      <a href="">Home<br></a>
+      <a href="">Services<br></a>
+      <a href="">Resources<br></a>
+      <a href="">The Bethel University and Seminary Logo and Identity<br></a>
+      <a href="">Web Authoring<br></a>
+      <a href="">Email<br></a>
+      <a href="">Web Content<br></a>
+      <a href="">Rules for Web & Email Writers<br></a>
+      <a href="">Contact Us<br></a>
+      <a href="">Student Employment Opportunities<br></a>
 
-    <section id="lists" class="card block">
-      <h2>6. Lists</h2>
-      <p>Use lists to break up long text or show sequential steps.</p>
-      <ul>
-        <li>Capitalize the first word of each item.</li>
-        <li>Add periods to complete sentences.</li>
-        <li>Keep items parallel (all fragments, all sentences, or all questions).</li>
-        <li>Use numbers for processes or ordered steps.</li>
-        <li>Make the first two words meaningful—they’re what readers will scan.</li>
-      </ul>
-    </section>
+      <section>
+        <h1>Anatomy of a Webpage</h1>
+        <a href="">Office Marketing and Communications></a>
+        <a href="">Resources></a>
+        <a href="">Web Authoring></a>
+        <a href="">Web Content</a>
+      </section>
 
-    <section id="emphasis" class="card block">
-      <h2>7. Bold, Italics, and Underline</h2>
-      <h3>Bold</h3>
-      <p>Highlight key information like deadlines or fees. Use sparingly—overuse reduces impact.</p>
-      <h3>Italics</h3>
-      <p>Use for titles (books, movies, publications) and repeated minor information that needs visual consistency.</p>
-      <h3>Underline</h3>
-      <p class="warn">Do not underline text on the web—people will think it’s a link. Use bold for emphasis instead.</p>
-    </section>
+      <section>
+        <p>
+          There are lots of pieces to think about when creating a webpage. Here’s a quick guide to the most basic elements.
+        </p>
+      </section>
 
-    <section id="links" class="card block">
-      <h2>8. Links</h2>
-      <p>Link meaningful phrases rather than single words like “here”.</p>
-      <ul>
-        <li>Phrases are easier to spot and improve SEO context.</li>
-        <li>Avoid “here”/“click here”.</li>
-        <li>When linking to files, add a tag like <span class="pill">(pdf)</span>, <span class="pill">(doc)</span>, or <span class="pill">(xls)</span>.</li>
-      </ul>
-    </section>
+      <section>
+        <h3>1 .Page Title</h3>
+        <p>
+          If we’ve done our job well, the page title should tell visitors exactly what they’ll find on the webpage.
+        </p>
+        <ul>
+          <li>Keep it short Use clear language</li>
+          <li>Make the first two words count</li>
+          <li>Avoid internal jargon or acronyms</li>
+        </ul>
+      </section>
 
-    <section id="cta" class="card block">
-      <h2>9. Call to Action (CTA)</h2>
-      <p>Give visitors a clear next step related to the task at hand.</p>
-      <a class="cta" href="#" aria-label="Primary call to action">Do the Next Step →</a>
-      <p class="hint">Examples: Apply now, Book a visit, Contact us, Download the guide.</p>
-    </section>
+      <section>
+        <h3>2. ID</h3>
+        <p>
+          The ID is a label assigned to the webpage that will appear at the end of the url.
+        </p>
+        <ul>
+          <li>Use hyphens between words</li>
+          <li>Never use underscores or other characters.</li>
+          <li>No capital letters</li>
+          <li>Use words that make sense</li>
+          <li>In almost every case, your page ID should use words found in your page title.</li>
+          <li>Don't use obscure acronyms or abbreviations.</li>
+        </ul>
+      </section>
 
-    <section class="footer">
-      <p>This page is a learning aid summarizing best practices for structuring web content.</p>
-    </section>
-  </main>
-</div>
+      <section>
+        <h3>3. Description</h3>
+        <p>
+          The description is a one-sentence summary of your page. It’s important to use key words and phrases that you think visitors might be using as search terms.
+        </p>
+        <p>Where your description might show up:</p>
+        <ul>
+          <li>Google search results page</li>
+          <li>Facebook, comments threads, or any other website where someone might post a link to your page</li>
+        </ul>
+      </section>
 
-  </div>
-</body>
+      <section>
+        <h3>4. Body</h3>
+        <p>
+          The body is the bulk of your webpage content. It’s the information you’re providing to help visitors complete their tasks.
+        </p>
+        <ul>
+          <li>Put your information in priority order with the most important information first.</li>
+          <li>Use short words, sentences, and paragraphs.</li>
+          <li>Think about your user first. What is the information they want to know?</li>
+          <li>Are you using language that your users understand?</li>
+          <li>Never use all caps unless it's a predefined style you cannot control. Use bold instead.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>5. Headings</h3>
+        <p>Headings help users scan and find information quickly.</p>
+        <ul>
+          <li>Accurately describe the section.</li>
+          <li>Be clear and concrete.</li>
+          <li>Use key terms relevant for users.</li>
+          <li>Use powerful and active words.</li>
+          <li>Use H2 for main headings, H3 for subheadings.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>6. Lists</h3>
+        <p>
+          Lists are helpful for breaking down huge paragraphs or providing step-by-step instructions.
+        </p>
+        <ul>
+          <li>Start with a capital letter.</li>
+          <li>Place a period at the end of complete sentences.</li>
+          <li>Use parallel language.</li>
+          <li>Use numbers for step-by-step processes.</li>
+          <li>Make the first two words meaningful.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>7. Bold, Italics, and Underline</h3>
+        <p>On the web, bold, italics, and underline each have a unique purpose.</p>
+
+        <article>
+          <h4>Bold</h4>
+          <p>
+            Use bold for highlighting important info, such as an application deadline or fee. You can also use <b>bold</b> for key introductory phrases of bulleted lists.
+          </p>
+          <p>
+            Words of advice: if bold is overused, it’s no longer helpful. When too much is emphasized nothing stands out.
+          </p>
+        </article>
+
+        <article>
+          <h4>Italics</h4>
+          <p>Use italics according to the Bethel Style Guide:</p>
+          <ul>
+            <li><i>Book titles</i></li>
+            <li><i>Movie titles</i></li>
+            <li><i>Titles of newspapers or publications</i></li>
+            <li>Other items as noted in the style guide</li>
+          </ul>
+          <p>
+            Italics can also be used to consistently format a repeated piece of minor information.
+          </p>
+          <p>Examples:</p>
+          <ul>
+            <li>Room locations on schedule of events for a conference</li>
+            <li>Job titles on a staff list</li>
+          </ul>
+        </article>
+
+        <article>
+          <h4>Underline</h4>
+          <p>
+            Never underline text on the web. Visitors will mistake underlined text for a link. This leads to confusion and reduces the impact of what you were trying to highlight. Use bold for emphasis instead.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h3>8. Links</h3>
+        <p>Hyperlink meaningful phrases rather than single words.</p>
+        <ul>
+          <li>Phrases are easier to spot.</li>
+          <li>Meaningful words help search engines.</li>
+          <li>Avoid using "here" or "click here".</li>
+          <li>Alert visitors when links lead to documents (e.g., pdf, doc, xls).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>9. Call to Action</h3>
+        <p>
+          Nearly all webpages should provide visitors with a call to action. What do we want<br />them to do with this information?
+        </p>
+        <p>
+          It’s helpful to always give visitors a place to go from each webpage that’s related to the task at hand.
+        </p>
+      </section>
+
+      <section>
+        <p>
+          Great work starts with great<br />input! Get started by opening<br />a job with us.
+        </p>
+        <img src="" alt="open job icon" />
+        <button>Open a Job</button>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h4>Contact</h4>
+        <address>
+          Bethel University<br />
+          3900 Bethel Drive<br />
+          St. Paul, MN 55112<br />
+          <a href="tel:6516386400">651.638.6400</a>
+        </address>
+
+        <article>
+          <button>Facebook <img src="" alt="Logo" /></button>
+          <button>X <img src="" alt="Logo" /></button>
+          <button>Instagram <img src="" alt="Logo" /></button>
+          <button>In <img src="" alt="InLogo" /></button>
+          <button>Youtube <img src="" alt="Logo" /></button>
+          <button>V <img src="" alt="Logo" /></button>
+          <button>TikTok <img src="" alt="Logo" /></button>
+        </article>
+      </section>
+
+      <section>
+        <h4>Information For</h4>
+          <li><a href="">Prospective Students</a></li>
+          <li><a href="">Current Students</a></li>
+          <li><a href="">Alumni</a></li>
+          <li><a href="">Parents & Families</a></li>
+          <li><a href="">Faculty & Staff</a></li>
+          <li><a href="">Churches</a></li>
+          <li><a href="">Military</a></li>
+      </section>
+
+      <section>
+        <h4>Resources</h4>
+          <li><a href="">Jobs at Bethel</a></li>
+          <li><a href="">Calendar</a></li>
+          <li><a href="">Library</a></li>
+          <li><a href="">Questions & Comments</a></li>
+          <li><a href="">Title IX Concerns</a></li>
+          <li><a href="">Course Catalogs</a></li>
+          <li><a href="">Support Bethel</a></li>
+
+       <p>
+        <article>
+          <button>Support Bethel</button>
+        </article>
+        </section>
+      </p>
+
+      <section>
+        <p>© 2025 Bethel University</p>
+        <p>
+          <a href="">CA Student Disclosures</a> |
+          <a href="">Privacy Policy</a>
+        </p>
+        <p>
+          Bethel University’s Christ-centered mission includes a commitment to equal educational opportunity and equal employment opportunity. Bethel does not unlawfully discriminate on the basis of race, color, creed, national origin, sex, marital status, disability, status with regard to public assistance, familial status, or age in its admissions, educational programs, or employment practices.
+        </p>
+      </section>
+    </footer>
+  </body>
 </html>
